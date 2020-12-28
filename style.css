@@ -5,12 +5,12 @@ body {
 }
 
 .calculatorBody {
-  border: 3px solid blue;
+  border: 3px solid #1565c0;
   width: 600px;
 }
 
 h1 {
-  background-color: blue;
+  background-color: #1565c0;
   color: white;
   margin: 0;
   padding: 10px;
@@ -22,13 +22,13 @@ h1 {
 }
 
 .optionTabs {
-  border-bottom: 3px solid blue;
+  border-bottom: 3px solid #1565c0;
   display: flex;
   justify-content: space-between;
 }
 
 .tabButton {
-  background-color: blue;
+  background-color: #1565c0;
   border-radius: 10px 10px 0 0;
   color: white;
   font-size: 1.5em;
@@ -40,32 +40,39 @@ div {
   margin-bottom: 10px;
 }
 
-.switchHeight,
-.switchWeight {
-  color: blue;
+#unitsSwitch {
+  color: #1565c0;
   float: right;
+}
+
+.hidden {
+  display: none;
 }
 
 .traitBox {
   display: inline-block;
 }
 
-label {
+.traitBox label {
   display: block;
   margin-bottom: 20px;
 }
 
-input {
+.traitBox input {
   border-radius: 7px;
-  display: block;
   font-size: 1em;
   height: 2em;
   width: 100px;
   padding: 5px;
 }
 
-.sexTraitBox {
-  display: block;
+.sexTraitBox input {
+  transform: scale(2);
+  margin: 10px;
+}
+
+.sexTraitBox label {
+  margin: 10px;
 }
 
 .calculateBox {
@@ -73,14 +80,14 @@ input {
 }
 
 .calculateButton {
-  background-color: green;
+  background-color: #007a32;
   border-radius: 7px;
   color: white;
   font-size: 1.5em;
-  padding: 10px;
+  padding: 15px;
 }
 .reset {
-  color: blue;
+  color: #1565c0;
   float: right;
   margin-top: 20px;
 }
