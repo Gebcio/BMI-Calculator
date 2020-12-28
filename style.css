@@ -5,12 +5,12 @@ body {
 }
 
 .calculatorBody {
-  border: 3px solid #1565c0;
+  border: 3px solid #005eb8;
   width: 600px;
 }
 
 h1 {
-  background-color: #1565c0;
+  background-color: #005eb8;
   color: white;
   margin: 0;
   padding: 10px;
@@ -22,13 +22,13 @@ h1 {
 }
 
 .optionTabs {
-  border-bottom: 3px solid #1565c0;
+  border-bottom: 3px solid #004b93;
   display: flex;
   justify-content: space-between;
 }
 
 .tabButton {
-  background-color: #1565c0;
+  background-color: #768692;
   border-radius: 10px 10px 0 0;
   color: white;
   font-size: 1.5em;
@@ -36,13 +36,29 @@ h1 {
   width: 49%;
 }
 
+.tabButton.active {
+  background-color: #005eb8;
+}
+
+.tabButton:hover {
+  background-color: rgba(255, 235, 59, 1);
+  color: black;
+}
+
 div {
   margin-bottom: 10px;
 }
 
-#unitsSwitch {
-  color: #1565c0;
+.unitsSwitch,
+.reset {
+  color: #005eb8;
   float: right;
+}
+
+.reset:hover,
+.unitsSwitch:hover {
+  color: #7c2855;
+  text-decoration: none;
 }
 
 .hidden {
@@ -54,8 +70,13 @@ div {
 }
 
 .traitBox label {
+  color: #4c6272;
   display: block;
   margin-bottom: 20px;
+}
+
+.traitBox input:focus {
+  box-shadow: 0em 0em 0em 0.15em rgba(255, 235, 59, 1);
 }
 
 .traitBox input {
@@ -67,6 +88,7 @@ div {
 }
 
 .sexTraitBox input {
+  border-radius: 8px;
   transform: scale(2);
   margin: 10px;
 }
@@ -80,17 +102,21 @@ div {
 }
 
 .calculateButton {
-  background-color: #007a32;
+  background-color: #007f3b;
   border-radius: 7px;
   color: white;
   font-size: 1.5em;
   padding: 15px;
 }
+
+.calculateButton:hover {
+  background-color: #006747;
+}
+
 .reset {
-  color: #1565c0;
-  float: right;
   margin-top: 20px;
 }
+
 @media only screen and (max-width: 600px) {
   .calculatorBody {
     width: 100%;

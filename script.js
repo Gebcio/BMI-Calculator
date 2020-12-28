@@ -1,16 +1,23 @@
-// function switchSystemOfUnits() {
-//   let elementImperial = document.getElementById("imperial");
-//   //   let elementMetric = document.getElementById("metric");
+tabButtonActiveSwitch = () => {
+  const tabButtonAdult = document.querySelector(".tabButtonAdult");
+  const tabButtonChild = document.querySelector(".tabButtonChild");
 
-//   //   if (elementImperial.classList.contains("")) {
-//   elementImperial.className("hidden");
-//   //   }
-// }
+  tabButtonAdult.classList.toggle("active");
+  tabButtonChild.classList.toggle("active");
+};
 
-const imperial = document.querySelector(".imperial");
-// const metric = document.querySelector(".metric");
-const unitsSwitch = document.querySelector("#unitsSwitch");
+function switchSystemOfUnits() {
+  const imperial = document.querySelector(".imperial");
+  const metric = document.querySelector(".metric");
 
-unitsSwitch.addEventListener("click", () => {
-  imperial.classList.add("hidden");
-});
+  imperial.classList.toggle("hidden");
+  metric.classList.toggle("hidden");
+}
+
+function childAdultSwitch() {
+  const adult = document.querySelector(".ageAdultBox");
+  const child = document.querySelector(".ageChildBox");
+
+  adult.classList.toggle("hidden");
+  child.classList.toggle("hidden");
+}

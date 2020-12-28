@@ -10,18 +10,32 @@
     <div class="calculatorBody">
       <h1 class="tableTitle">BMI calculator</h1>
       <div class="calculatorInnerContent">
+        <!-- Adult/Child Switch Section -->
+
         <div class="optionTabs">
-          <button class="tabButton">Adult</button>
-          <button class="tabButton">Child</button>
+          <button
+            class="tabButton tabButtonAdult active"
+            onclick="childAdultSwitch(); tabButtonActiveSwitch()"
+          >
+            Adult
+          </button>
+          <button
+            class="tabButton tabButtonChild"
+            onclick="childAdultSwitch(); tabButtonActiveSwitch()"
+          >
+            Child
+          </button>
         </div>
 
-        <!-- Imperial -->
+        <!-- Imperial Units Section -->
 
         <div class="imperial">
           <div class="heightBox">
             <h3>Height</h3>
             <div>
-              <a href="" id="unitsSwitch">Switch to metric</a>
+              <a href="#" class="unitsSwitch" onclick="switchSystemOfUnits()"
+                >Switch to metric system</a
+              >
               <div class="traitBox">
                 <label for="">Feet</label>
                 <input type="number" />
@@ -52,13 +66,15 @@
           </div>
         </div>
 
-        <!-- Metric -->
+        <!-- Metric Units Section -->
 
         <div class="metric hidden">
           <div class="heightBox">
             <h3>Height</h3>
             <div>
-              <a href="" id="unitsSwitch">Switch to imperial</a>
+              <a href="#" class="unitsSwitch" onclick="switchSystemOfUnits()"
+                >Switch to imperial system</a
+              >
               <div class="traitBox">
                 <label for="">Centimeters</label>
                 <input type="number" />
@@ -79,7 +95,7 @@
           </div>
         </div>
 
-        <!-- Age Adult -->
+        <!-- Age Adult Section -->
 
         <div class="ageAdultBox">
           <h3>Age</h3>
@@ -92,7 +108,7 @@
           </div>
         </div>
 
-        <!-- Age Child -->
+        <!-- Age Child Section-->
 
         <div class="ageChildBox hidden">
           <h3>Age</h3>
@@ -115,24 +131,26 @@
           </div>
         </div>
 
-        <!-- Sex -->
+        <!-- Sex section -->
 
         <div class="sexBox">
           <h3>Sex</h3>
           <div>
             <div class="sexTraitBox">
-              <input type="radio" id="male" />
+              <input type="radio" name="gender" id="male" />
               <label for="male">Male</label>
             </div>
 
             <div class="sexTraitBox">
-              <input type="radio" id="female" />
+              <input type="radio" name="gender" id="female" />
               <label for="female">Female</label>
             </div>
 
             <hr />
           </div>
         </div>
+
+        <!-- Submit & Reset Section -->
 
         <div class="calculateBox">
           <button class="calculateButton">Calculate</button>
