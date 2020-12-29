@@ -33,7 +33,10 @@
           <div class="heightBox">
             <h3>Height</h3>
             <div>
-              <a href="#" class="unitsSwitch" onclick="switchSystemOfUnits()"
+              <a
+                href="javascript:;"
+                class="unitsSwitch"
+                onclick="switchSystemOfUnits()"
                 >Switch to metric system</a
               >
               <div class="traitBox">
@@ -72,12 +75,15 @@
           <div class="heightBox">
             <h3>Height</h3>
             <div>
-              <a href="#" class="unitsSwitch" onclick="switchSystemOfUnits()"
+              <a
+                href="javascript:;"
+                class="unitsSwitch"
+                onclick="switchSystemOfUnits()"
                 >Switch to imperial system</a
               >
               <div class="traitBox">
                 <label for="">Centimeters</label>
-                <input type="number" />
+                <input type="number" id="heightCm" />
               </div>
               <hr />
             </div>
@@ -88,7 +94,7 @@
             <div>
               <div class="traitBox">
                 <label for="">Kilograms</label>
-                <input type="number" />
+                <input type="number" id="weightKg" />
               </div>
               <hr />
             </div>
@@ -151,9 +157,10 @@
         </div>
 
         <!-- Submit & Reset Section -->
-
         <div class="calculateBox">
-          <button class="calculateButton">Calculate</button>
+          <button class="calculateButton" onclick="calculateMetric()">
+            Calculate
+          </button>
           <a href="" class="reset">Reset</a>
         </div>
       </div>
