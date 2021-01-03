@@ -5,12 +5,12 @@ body {
 }
 
 .calculatorBody {
-  border: 3px solid blue;
+  border: 3px solid #005eb8;
   width: 600px;
 }
 
 h1 {
-  background-color: blue;
+  background-color: #005eb8;
   color: white;
   margin: 0;
   padding: 10px;
@@ -22,13 +22,13 @@ h1 {
 }
 
 .optionTabs {
-  border-bottom: 3px solid blue;
+  border-bottom: 3px solid #004b93;
   display: flex;
   justify-content: space-between;
 }
 
 .tabButton {
-  background-color: blue;
+  background-color: #768692;
   border-radius: 10px 10px 0 0;
   color: white;
   font-size: 1.5em;
@@ -36,17 +36,36 @@ h1 {
   width: 49%;
 }
 
+.tabButton.active {
+  background-color: #005eb8;
+}
+
+.tabButton:hover {
+  background-color: rgba(255, 235, 59, 1);
+  color: black;
+}
+
 div {
   margin-bottom: 10px;
 }
 
-.switchHeight,
-.switchWeight {
-  color: blue;
+.unitsSwitch,
+.reset {
+  color: #005eb8;
   float: right;
 }
 
+<<<<<<< HEAD
 .hiddenBox {
+=======
+.reset:hover,
+.unitsSwitch:hover {
+  color: #7c2855;
+  text-decoration: none;
+}
+
+.hidden {
+>>>>>>> 84bfd1d8266bd70019906241c761b205eed863d1
   display: none;
 }
 
@@ -54,22 +73,32 @@ div {
   display: inline-block;
 }
 
-label {
+.traitBox label {
+  color: #4c6272;
   display: block;
   margin-bottom: 20px;
 }
 
-input {
+.traitBox input:focus {
+  box-shadow: 0em 0em 0em 0.15em rgba(255, 235, 59, 1);
+}
+
+.traitBox input {
   border-radius: 7px;
-  display: block;
   font-size: 1em;
   height: 2em;
   width: 100px;
   padding: 5px;
 }
 
-.sexTraitBox {
-  display: block;
+.sexTraitBox input {
+  border-radius: 8px;
+  transform: scale(2);
+  margin: 10px;
+}
+
+.sexTraitBox label {
+  margin: 10px;
 }
 
 .calculateBox {
@@ -77,17 +106,21 @@ input {
 }
 
 .calculateButton {
-  background-color: green;
+  background-color: #007f3b;
   border-radius: 7px;
   color: white;
   font-size: 1.5em;
-  padding: 10px;
+  padding: 15px;
 }
+
+.calculateButton:hover {
+  background-color: #006747;
+}
+
 .reset {
-  color: blue;
-  float: right;
   margin-top: 20px;
 }
+
 @media only screen and (max-width: 600px) {
   .calculatorBody {
     width: 100%;

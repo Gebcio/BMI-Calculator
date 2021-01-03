@@ -10,11 +10,24 @@
     <div class="calculatorBody">
       <h1 class="tableTitle">BMI calculator</h1>
       <div class="calculatorInnerContent">
+        <!-- Adult/Child Switch Section -->
+
         <div class="optionTabs">
-          <button class="tabButton">Adult</button>
-          <button class="tabButton">Child</button>
+          <button
+            class="tabButton tabButtonAdult active"
+            onclick="childAdultSwitch(); tabButtonActiveSwitch()"
+          >
+            Adult
+          </button>
+          <button
+            class="tabButton tabButtonChild"
+            onclick="childAdultSwitch(); tabButtonActiveSwitch()"
+          >
+            Child
+          </button>
         </div>
 
+<<<<<<< HEAD
         <div class="mainParametersBoxC">
           <div class="heightBox">
             <h3>Height</h3>
@@ -27,6 +40,28 @@
               <div class="traitBox">
                 <label for="">Inches</label>
                 <input type="text" />
+=======
+        <!-- Imperial Units Section -->
+
+        <div class="imperial">
+          <div class="heightBox">
+            <h3>Height</h3>
+            <div>
+              <a
+                href="javascript:;"
+                class="unitsSwitch"
+                onclick="switchSystemOfUnits()"
+                >Switch to metric system</a
+              >
+              <div class="traitBox">
+                <label for="">Feet</label>
+                <input type="number" />
+              </div>
+
+              <div class="traitBox">
+                <label for="">Inches</label>
+                <input type="number" />
+>>>>>>> 84bfd1d8266bd70019906241c761b205eed863d1
               </div>
               <hr />
             </div>
@@ -35,6 +70,7 @@
           <div class="weightBox">
             <h3>Weight</h3>
             <div>
+<<<<<<< HEAD
               <a href="" class="switchWeight">Switch to kg</a>
               <div class="traitBox">
                 <label for="">Stone</label>
@@ -43,12 +79,23 @@
               <div class="traitBox">
                 <label for="">Pounds</label>
                 <input type="text" />
+=======
+              <div class="traitBox">
+                <label for="">Stone</label>
+                <input type="number" />
+              </div>
+
+              <div class="traitBox">
+                <label for="">Pounds</label>
+                <input type="number" />
+>>>>>>> 84bfd1d8266bd70019906241c761b205eed863d1
               </div>
               <hr />
             </div>
           </div>
         </div>
 
+<<<<<<< HEAD
         <!--  -->
 
         <div class="mainParametersBoxM hiddenBox">
@@ -59,10 +106,39 @@
               <div class="traitBox">
                 <label for="">Centimeters</label>
                 <input type="text" />
+=======
+        <!-- Metric Units Section -->
+
+        <div class="metric hidden">
+          <div class="heightBox">
+            <h3>Height</h3>
+            <div>
+              <a
+                href="javascript:;"
+                class="unitsSwitch"
+                onclick="switchSystemOfUnits()"
+                >Switch to imperial system</a
+              >
+              <div class="traitBox">
+                <label for="">Centimeters</label>
+                <input type="number" id="heightCm" />
               </div>
               <hr />
             </div>
           </div>
+
+          <div class="weightBox">
+            <h3>Weight</h3>
+            <div>
+              <div class="traitBox">
+                <label for="">Kilograms</label>
+                <input type="number" id="weightKg" />
+>>>>>>> 84bfd1d8266bd70019906241c761b205eed863d1
+              </div>
+              <hr />
+            </div>
+          </div>
+<<<<<<< HEAD
 
           <div class="weightBox">
             <h3>Weight</h3>
@@ -73,10 +149,23 @@
                 <input type="text" />
               </div>
               <hr />
+=======
+        </div>
+
+        <!-- Age Adult Section -->
+
+        <div class="ageAdultBox">
+          <h3>Age</h3>
+          <div>
+            <div class="traitBox">
+              <label for="">Years</label>
+              <input type="number" />
+>>>>>>> 84bfd1d8266bd70019906241c761b205eed863d1
             </div>
           </div>
         </div>
 
+<<<<<<< HEAD
         <!--  -->
 
         <div class="ageBox">
@@ -84,28 +173,55 @@
           <div>
             <div class="traitBox">
               <input type="text" />
+=======
+        <!-- Age Child Section-->
+
+        <div class="ageChildBox hidden">
+          <h3>Age</h3>
+          <div>
+            <div class="traitBox">
+              <label for="">Day</label>
+              <input type="number" />
+            </div>
+
+            <div class="traitBox">
+              <label for="">Month</label>
+              <input type="number" />
+            </div>
+
+            <div class="traitBox">
+              <label for="">Year</label>
+              <input type="number" />
+>>>>>>> 84bfd1d8266bd70019906241c761b205eed863d1
             </div>
             <hr />
           </div>
         </div>
+
+        <!-- Sex section -->
 
         <div class="sexBox">
           <h3>Sex</h3>
           <div>
             <div class="sexTraitBox">
-              <input type="radio" />
-              <label for="">Male</label>
+              <input type="radio" name="gender" id="male" />
+              <label for="male">Male</label>
             </div>
+
             <div class="sexTraitBox">
-              <input type="radio" />
-              <label for="">Female</label>
+              <input type="radio" name="gender" id="female" />
+              <label for="female">Female</label>
             </div>
+
             <hr />
           </div>
         </div>
 
+        <!-- Submit & Reset Section -->
         <div class="calculateBox">
-          <button class="calculateButton">Calculate</button>
+          <button class="calculateButton" onclick="calculateMetric()">
+            Calculate
+          </button>
           <a href="" class="reset">Reset</a>
         </div>
       </div>
