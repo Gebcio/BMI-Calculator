@@ -55,9 +55,6 @@ div {
   float: right;
 }
 
-<<<<<<< HEAD
-.hiddenBox {
-=======
 .reset:hover,
 .unitsSwitch:hover {
   color: #7c2855;
@@ -65,7 +62,6 @@ div {
 }
 
 .hidden {
->>>>>>> 84bfd1d8266bd70019906241c761b205eed863d1
   display: none;
 }
 
