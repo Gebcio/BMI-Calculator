@@ -46,6 +46,10 @@ div {
   float: right;
 }
 
+.hiddenBox {
+  display: none;
+}
+
 .traitBox {
   display: inline-block;
 }
