@@ -101,7 +101,7 @@ div {
   margin-top: 30px;
 }
 
-.calculateButton {
+#calculateButton {
   background-color: #007f3b;
   border-radius: 7px;
   color: white;
